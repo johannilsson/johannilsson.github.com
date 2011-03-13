@@ -2,7 +2,7 @@
 layout: post
 title: Android Pull To Refresh Update
 ---
-{% highlight %}
+
     <!--
     The PullToRefreshListView replaces a standard ListView widget.
     -->
@@ -11,4 +11,3 @@ title: Android Pull To Refresh Update
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
         />
-{% endhighlight %}
