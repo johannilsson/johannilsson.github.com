@@ -1,0 +1,20 @@
+---
+layout: default
+title: Johan Nilsson
+---
+
+
+<div id="home">
+    <h2>Blog Posts</h2>
+    <ul class="posts">
+    {% for post in site.posts %}
+        <li><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <div id="about">
+        <img src="http://www.gravatar.com/avatar/67c1ea7baa076aa39cb43c2b80bc9e5d.png">
+        <p>I'm <a href="http://www.linkedin.com/in/johanjohan">Johan</a>, A Stockholm, Sweden based Web and Android developer that love APIs, hackathons and <a href="https://github.com/johannilsson">open source</a>.</p>
+    </div>
+
+</div>
