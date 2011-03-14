@@ -193,6 +193,14 @@ ul {
     margin-bottom: 1.2em;
 }
 
+#disqus_thread h3 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
+#dsq-global-toolbar {
+    float: right;
+}
+
 #container {
     width: 600px;
     margin: 1.2em auto;
