@@ -189,6 +189,9 @@ pre {
     color: #fff;
     margin-bottom: 1.2em;
 }
+ul {
+    margin-bottom: 1.2em;
+}
 
 #container {
     width: 600px;
