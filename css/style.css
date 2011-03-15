@@ -180,6 +180,10 @@ h2 {
     font-size: 1.2em;
     margin-bottom: 1.2em;
 }
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+}
 
 p {
     margin-bottom: 1em;
@@ -191,14 +195,6 @@ pre {
 }
 ul {
     margin-bottom: 1.2em;
-}
-
-#disqus_thread h3 {
-    font-size: 1.2em;
-    margin-bottom: 1.2em;
-}
-#dsq-global-toolbar {
-    float: right;
 }
 
 #container {
@@ -213,6 +209,7 @@ ul {
     float: left;
     margin-right: 1em;
     border: 4px solid #E0EEE0;
+    border-radius: 3px;
 }
 
 #home ul.posts li {
@@ -224,6 +221,52 @@ ul {
 }
 #home ul.posts time {
     color: #828282;
+}
+
+#dsq-global-toolbar {
+    width: 200px !important;
+    margin: 0 0 -20px 0 !important;
+    float: right !important;
+    
+}
+.dsq-header-avatar img {
+    border-bottom: 1px solid #C9C9C9;
+}
+
+.dsq-comment-header {
+    background-image: none !important;
+    border: none !important;
+}
+.dsq-global-toolbar-container a {
+
+}
+.dsq-comment-header-time {
+    float: right;
+}
+.dsq-options {
+    display: none !important;
+}
+.dsq-toolbar-item {
+    opacity: 0.2 !important;
+}
+
+ul.comments {
+    margin-left: 0;
+}
+ul.comments li {
+    list-style-type: none;
+    margin-bottom: 1.6em;
+    padding-bottom: 1.6em;
+}
+ul.comments li img {
+    float: left;
+    border: 4px solid #E0EEE0;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+ul.comments li .comment-text {
+    clear: left;
+    padding-top: 0.8em;
 }
 
 /**
