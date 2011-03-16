@@ -226,13 +226,11 @@ ul {
 #dsq-global-toolbar {
     width: 200px !important;
     margin: 0 0 -20px 0 !important;
-    float: right !important;
-    
+    float: right !important;   
 }
 .dsq-header-avatar img {
     border-bottom: 1px solid #C9C9C9;
 }
-
 .dsq-comment-header {
     background-image: none !important;
     border: none !important;
@@ -248,6 +246,18 @@ ul {
 }
 .dsq-toolbar-item {
     opacity: 0.2 !important;
+}
+.dsq-toolbar-item:hover {
+    opacity: 1 !important;
+}
+.dsq-comment-footer {
+    margin: 0 !important;
+}
+.dsq-comment-footer button {
+        opacity: 0.3 !important;
+}
+.dsq-comment-footer button:hover {
+        opacity: 1 !important;
 }
 
 ul.comments {
