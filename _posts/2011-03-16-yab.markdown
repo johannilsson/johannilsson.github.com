@@ -1,0 +1,10 @@
+---
+layout: post
+title: Yet Another Blog
+---
+
+Last Sunday I created a blog, and here it is.
+
+It's amazing to see how easy the tools has become to use. In just a couple of hours I created this blog using [Jekyll](http://jekyllrb.com/), [HTML5 Boilerplate](http://html5boilerplate.com/), [Disqus](http://disqus.com/) comments, [Robert Nymans](http://robertnyman.com/) javascript for [Twitter reactions](http://robertnyman.com/2010/11/28/javascript-badge-to-present-twitter-reactions-to-a-certain-url-in-your-own-web-site/) and hosting using [GitHub pages](http://pages.github).
+
+I've previously blogged in different forms, first using static html files. Couple of years later using [Textpattern](http://textpattern.com/) that I also created a [few plugins](http://www.markupartist.com/files/) for. A move from one server to antoher caused me to lose the data but [some pages is still available](http://waybackmachine.org/*/johan.galaxen.net) at the Internet Archive though. Then I decided to try [Tumblr](http://tumblr.com/) but didn't have [anything interesting](http://blog.johannilsson.me/) to post. My next jump was to [Blogger](http://www.blogger.com/), same story there [two post](http://markupartist.blogspot.com/) so far which I imported here. So no promises that there will be any posts, but it's worth a try and it's back to static html files.
