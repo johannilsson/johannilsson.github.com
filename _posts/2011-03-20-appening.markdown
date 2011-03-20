@@ -29,7 +29,7 @@ Avtryck won prize for best idea, sponsored by [Sundsvall42](http://www.sundsvall
 
 ## Summary
 
-I was very impressed by what all teams presented during the event, all teams and their presentations will soon be available at the Appening website. Four out of seven teams used the data available from Riksantikvarieämbetet. It's clear that they did this because it was the only data set that was well structured and documented. I believe/hope that the other authorities that participated got inspired and will start working on open up their data soon.
+I was very impressed by what all teams presented during the event, all teams and their presentations will soon be available at the Appening website. Four out of seven teams used the data available from Riksantikvarieämbetet. I believe most of the teams decided to use this data because it was not only the most interesting data it was also the most structured and well documented data set available. I believe/hope that the other authorities that participated got inspired and will start working on open up their data soon.
 
 Thank you [Mittuniversitetet](http://www.miun.se/), [E-delegationen](http://www.edelegationen.se/), [Sundsvall42](http://www.sundsvall42.se/) and [Dragon Open Source Foundation](http://www.dosf.se/) for organizing this event.
 
