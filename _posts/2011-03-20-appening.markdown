@@ -15,7 +15,7 @@ A month ago I [tweeted](http://twitter.com/#!/johanni/status/39321224500875264) 
 
 **Riksantikvarieämbetet** presented a quite impressive and and well documented [API](http://www.ksamsok.se/api/).
 
-**Other data sources** was also available but not presented in detailed, instead they where listed on the [Appening website](http://appening.se/data). We had a lot of data available from Sundsvall and if someone would have presented the data I'm sure someone would have used this data during the event.
+**Other data sources** was also available but not presented in detailed, instead they where listed on the [Appening website](http://appening.se/data). There was lot of data available from Sundsvall municipality, if the data would have been presented in a better way or by someone I'm sure we would have seen this data used in some apps.
 
 ## Avtryck
 
