@@ -1,0 +1,37 @@
+---
+layout: post
+title: Appening
+---
+
+A month ago I [tweeted](http://twitter.com/#!/johanni/status/39321224500875264) about Appening (a 24 hour hackathon on public data in Sundsvall) and that I wanted to participate. A couple of hours later on me [Johan Mjönes](http://twitter.com/nollbit), [Joakim Bodin](http://twitter.com/jbripley), [Jonas Beckman](http://twitter.com/jonasbeckman) and [Patrik Åkerfeldt](http://twitter.com/pakerfeldt) decided to participate.
+
+## Data
+
+[Försäkringskassan](http://www.forsakringskassan.se/) (Social Insurance), [Bolagsverket](http://bolagsverket.se/) (Swedish Companies Registration Office) and [Riksantikvarieämbetet](http://www.raa.se/) (The Swedish National Heritage Board) participated and held presentations on their available APIs. <a href="http://www.flickr.com/photos/johannilsson/5543117687/" title="Appening 2011 by Johan Nilsson, on Flickr" style="float: right; padding: 15px"><img src="http://farm6.static.flickr.com/5140/5543117687_6f41070938_m.jpg" width="240" height="180" alt="Appening 2011" /></a>
+
+**Försäkringskassan** mostly handle very sensitive data and could because of this not open up their data. Even though I believe I should have the possibility to export whatever data they have on me in their system. For the event they did their best and brought a server with mocked data about a fictive family for us to query and build new services upon.
+
+**Bolagsverket** didn't have any available APIs available for us instead we had to screen scrape their web to be able to build anything useful. However they provided us with login credentials for their service that they normally charge quite a lot of money for. <a href="http://www.flickr.com/photos/johannilsson/5543696560/" title="Appening 2011 by Johan Nilsson, on Flickr" style="float: right; padding: 15px"><img src="http://farm6.static.flickr.com/5133/5543696560_e900114484_m.jpg" width="240" height="180" alt="Appening 2011" /></a>
+
+**Riksantikvarieämbetet** presented a quite impressive and and well documented [API](http://www.ksamsok.se/api/).
+
+**Other data sources** was also available but not presented in detailed, instead they where listed on the [Appening website](http://appening.se/data). We had a lot of data available from Sundsvall and if someone would have presented the data I'm sure someone would have used this data during the event.
+
+## Avtryck
+
+<img src="https://github.com/Avtryck/avtryck-projectweb/raw/master/appening/captures/8.png" width="300px" style="float: right; margin: 15px;"> Our team decided quite early to use the data from Riksantikvarieämbetet. This was an easy decision and we also wanted to use this data to show them our love for the great work they had did on opening up the data in a well structured format.
+
+We created the Android app Avtryck (roughly translated to mark). Our idea was to build a service where users could create routes by marking out points of cultural heritage with their own descriptions. By creating routes like this we allowed users to put the data into a context which we believe is more appealing. During the event we focused on the Android app and built a mocked API for fetching routes.
+
+Our presentation is available on [Bambuser](http://bambuser.com/node/1590759), around 3.40, slides is uploaded to [GitHub](https://github.com/Avtryck/avtryck-projectweb/raw/58d354e510a96b9349eaa85d2fe1740583fe98d7/appening/avtryck-slides.pdf) (PDF). More information about the project is available at our [organization on GitHub](https://github.com/Avtryck). During the event we also registered the domain [tidensavtryck.se](http://www.tidensavtryck.se/) and we hope to continue the work on both the app the service so users can actually start to create routes. We also want to combine other data sources to create richer routes. A route I would like to see for the summer is the best [flea markets](http://loppiskartan.se) around Stockholm combined with recommended [cafés](http://cafekartan.se) along the route.
+
+Avtryck won prize for best idea, sponsored by [Sundsvall42](http://www.sundsvall42.se/) and a prize from Riksantikvarieämbetet. Thank you! <a href="http://www.flickr.com/photos/johannilsson/5543697186/" title="Appening 2011 by Johan Nilsson, on Flickr" style="float: right; padding: 15px"><img src="http://farm6.static.flickr.com/5060/5543697186_a5ff5a34c6_m.jpg" width="240" height="180" alt="Appening 2011" /></a>
+
+## Summary
+
+I was very impressed by what all teams presented during the event, all teams and their presentations will soon be available at the Appening website. Four out of seven teams used the data available from Riksantikvarieämbetet. It's clear that they did this because it was the only data set that was well structured and documented. I believe/hope that the other authorities that participated got inspired and will start working on open up their data soon.
+
+Thank you [Mittuniversitetet](http://www.miun.se/), [E-delegationen](http://www.edelegationen.se/), [Sundsvall42](http://www.sundsvall42.se/) and [Dragon Open Source Foundation](http://www.dosf.se/) for organizing this event.
+
+I hope Appening will be an annual event and that we will have more data sources available and authorities participating next year.
+
