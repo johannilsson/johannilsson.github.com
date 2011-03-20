@@ -3,7 +3,7 @@ layout: post
 title: Appening
 ---
 
-A month ago I [tweeted](http://twitter.com/#!/johanni/status/39321224500875264) about Appening (a 24 hour hackathon on public data in Sundsvall) and that I wanted to participate. A couple of hours later on me [Johan Mjönes](http://twitter.com/nollbit), [Joakim Bodin](http://twitter.com/jbripley), [Jonas Beckman](http://twitter.com/jonasbeckman) and [Patrik Åkerfeldt](http://twitter.com/pakerfeldt) decided to participate.
+A month ago I [tweeted](http://twitter.com/#!/johanni/status/39321224500875264) about Appening (a 24 hour hackathon on public data in Sundsvall) and that I wanted to participate. A couple of hours later me [Johan Mjönes](http://twitter.com/nollbit), [Joakim Bodin](http://twitter.com/jbripley), [Jonas Beckman](http://twitter.com/jonasbeckman) and [Patrik Åkerfeldt](http://twitter.com/pakerfeldt) decided to participate.
 
 ## Data
 
