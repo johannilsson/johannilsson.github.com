@@ -1,0 +1,10 @@
+---
+layout: post
+title: Help to create a list of apps using the Android Action Bar and the Pull to Refresh widget
+---
+
+I want to put together a list of applications using the [Android Action Bar](https://github.com/johannilsson/android-actionbar) or the [Android Pull to Refresh](https://github.com/johannilsson/android-pulltorefresh) widget to see what designs others have come up with. It would also be fun for me to know if someone is actually using them :)
+
+It's definitly optional but if you want to be featured please edit the [Apps wiki page](https://github.com/johannilsson/android-actionbar/wiki/Apps) of Android Action Bar or the [Apps wiki page](https://github.com/johannilsson/android-pulltorefresh/wiki/Apps) of Android Pull to Refresh. You can also send me the App name, Market link (if available) and a screenshot (optional) by email.
+
+I'm also very interesting to know what's sucks and what's not with these widgets.
