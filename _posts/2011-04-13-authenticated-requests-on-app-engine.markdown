@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Authenticated API requests on Google App Enging
+title: Authenticated API requests on Google App Engine
 ---
 
-Ever wanted to do authenticated API requests on [Google App Enging](http://code.google.com/appengine/) using the provided [User Service](http://code.google.com/intl/sv/appengine/docs/python/gettingstarted/usingusers.html)?
+Ever wanted to do authenticated API requests on [Google App Engine](http://code.google.com/appengine/) using the provided [User Service](http://code.google.com/intl/sv/appengine/docs/python/gettingstarted/usingusers.html)?
 
 When we first released [droidgiro](http://droidgiro.se/) we needed to do this, we later on migrated to another solution but that's another story. It's was really easy to add login functionality on a regular web using the User Service, but it turned out to be a bit harder to do it through the API. Last year I held an [presentation](http://www.slideshare.net/johannilsson/foss-sthlm-android-cloud-to-device-messaging) about [Android C2DM](http://code.google.com/intl/sv/android/c2dm/index.html) and using examples from that presentation I got it to work in a similar fashion with App Engine.
 
