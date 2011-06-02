@@ -188,11 +188,20 @@ h3 {
 p {
     margin-bottom: 1em;
 }
+
 pre {
-    background-color: #000;
-    color: #fff;
-    margin-bottom: 1.2em;
+    margin: 1em 0;
+    font-size: 12px;
+    background-color: #F0F0F0;
+    padding: 5px;
+    line-height: 1.5em;
+    color: #444;
+    overflow: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
+
 ul {
     margin-bottom: 1.2em;
 }
