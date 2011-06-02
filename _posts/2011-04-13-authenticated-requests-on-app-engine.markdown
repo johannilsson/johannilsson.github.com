@@ -9,14 +9,16 @@ When we first released [droidgiro](http://droidgiro.se/) we needed to do this, w
 
 Here's an example handler that demonstrates how to identify a logged in user.
 
-    class ExampleHandler(webapp.RequestHandler):
-        def post(self):
-            user = users.get_current_user()
-            if user:
-                self.response.out.write("Welcome, %s." % user.nickname())
-            else:
-                self.error(401)
-                self.response.out.write(":(")
+{% highlight python %}
+class ExampleHandler(webapp.RequestHandler):
+    def post(self):
+        user = users.get_current_user()
+        if user:
+            self.response.out.write("Welcome, %s." % user.nickname())
+        else:
+            self.error(401)
+            self.response.out.write(":(")
+{% endhighlight %}
 
 In the examples below I'm using [cURL](http://curl.haxx.se/) since I believe that's the easiest way to see what's actually is going on.
 
