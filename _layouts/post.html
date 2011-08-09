@@ -6,7 +6,7 @@ layout: default
     {{ content }}
     <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %d, %Y" }}</time></p>
     <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-    <p><a href="http://twitter.com/share" class="twitter-share-button">Tweet</a> <g:plusone size="medium"></g:plusone></p>
+    <p><a class="FlattrButton" href="http://johannilsson.com{{ page.url }}" title="{{ page.title }}" lang="en"></a> <a href="http://twitter.com/share" class="twitter-share-button">Tweet</a> <g:plusone size="medium"></g:plusone></p>
 </div>
 
 <div id="twitter-reactions"></div>
@@ -15,15 +15,20 @@ layout: default
 <script src="http://otter.topsy.com/trackbacks.js?callback=twitterReactions&amp;perpage=100&amp;url=http://johannilsson.com{{ page.url }}"></script> 
 
 <div id="disqus_thread"></div>
+
+<script type="text/javascript"> 
+    (function() {
+      var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto&button=compact&uid=johannilsson&category=text';
+      t.parentNode.insertBefore(s, t);
+    })();
+</script>
+
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'johannilssonsblog'; // required: replace example with your forum shortname
-
-    // The following are highly recommended additional parameters. Remove the slashes in front to use.
-    // var disqus_identifier = 'unique_dynamic_id_1234';
     var disqus_url = 'http://johannilsson.com{{ page.url }}';
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
