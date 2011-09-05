@@ -16,3 +16,15 @@ Please don't hesitate to ask if you have any question on this or other things on
 
 Thank you for your patience and I hope you will understand why I needed to do this change.
 
+## Update
+
+I realized that just adding ads without an alternative was not a good way to do this. The latest version on Android Market has the ads disabled, the way forward is to focus on rebuilding and migrating the server.
+
+During this time I hope that the cost will be covered by donations. I accept donations using Pledgie or Flattr. If you or anyone you know want to sponsor the costs please don't hesitate to contact me. If you donate and I still decide to introduce a paid version I promise that you will get that app for free.
+
+<p><a href='http://www.pledgie.com/campaigns/6527'><img alt='Click here to lend your support to: sthlmtraveling and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/6527.png?skin_name=chrome' border='0' /></a></p>
+
+  
+
+<p><a href="http://flattr.com/thing/332993/STHLM-Traveling" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></p>
+
