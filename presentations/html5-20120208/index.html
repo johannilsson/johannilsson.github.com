@@ -1,0 +1,942 @@
+
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+
+<html>
+  <head>
+    <title>Presentation</title>
+
+    <meta charset='utf-8'>
+    <script
+      src='http://html5slides.googlecode.com/svn/trunk/slides.js'></script>
+  </head>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Orbitron|Kameron|Muli|Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono&v2">
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    section {
+      background-image: url('green_dust_scratch.png');
+    }
+    
+/*
+ * CSS animated rainbow dividers of awesome 
+ * by Chris Heilmann @codepo8 and Lea Verou @leaverou 
+**/
+@-moz-keyframes charlieeee {
+  from { background-position:top left; } 
+  to {background-position:top right; }
+}
+@-webkit-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@-o-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@-ms-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@-khtml-keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+@keyframes charlieeee { 
+  from { background-position:top left; }  
+  to { background-position:top right; }  
+}
+.catchadream{
+  background-image:-webkit-linear-gradient( left, red, orange, yellow, green,
+                                          blue, indigo, violet, indigo, blue,
+                                          green, yellow, orange, red );
+  background-image:-moz-linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  background-image:-o-linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  background-image:-ms-linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  background-image:-khtml-linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  background-image:linear-gradient( left, red, orange, yellow, green,
+                                         blue,indigo, violet, indigo, blue,
+                                         green, yellow, orange,red );
+  -moz-animation:charlieeee 2.5s forwards linear infinite;
+  -webkit-animation:charlieeee 2.5s forwards linear infinite;
+  -o-animation:charlieeee 2.5s forwards linear infinite;
+  -khtml-animation:charlieeee 2.5s forwards linear infinite;
+  -ms-animation:charlieeee 2.5s forwards linear infinite;
+  -lynx-animation:charlieeee 2.5s forwards linear infinite;
+  animation:charlieeee 2.5s forwards linear infinite;
+  background-size:50% auto;
+}
+#tongue{position:cheek;}
+/* ^ OMG! An ID! That kills performance! */
+
+/*
+  .catchadream:after{content:'廌'}
+*/
+/* ^ uncomment to add unicorn */
+
+  </style>
+
+  <body style='display: none'>
+
+    <section class='slides layout-default'>
+
+      <article class="smaller">
+        <img src="HTML5_Logo_512.png" class="centered">
+        <p>
+          Johan Nilsson
+          <br>
+          20120208
+        </p>
+      </article>
+
+      <article class="build about">
+        <img src="johannilsson.png" width="800px" style="position:absolute; left:0px; top:500px; z-index: 1000">
+        <img src="sthlmandroid.png" style="position:absolute; left:0px; top:300px; -webkit-transform:  rotate(0deg);">
+        <img src="github.png" style="position:absolute; left:0px; top:30px;">
+        <img src="sthlmtraveling.png" style="position:absolute; left:200px; top:0px; -webkit-transform:  rotate(-20deg);">
+        <img src="theo.jpg" style="position:absolute; left:400px; top:10px; -webkit-transform:  rotate(20deg);">
+        <img src="hackathon.jpg" style="position:absolute; left:130px; top:220px; -webkit-transform:  rotate(-2deg);">
+        <p style="position:absolute; left:450px; top:350px; -webkit-transform:  rotate(-10deg); color: white; font-size: 80px;">@johanni</p>
+        <img src="skane.png" style="position:absolute; left:50px; top:140px; -webkit-transform:  rotate(5deg); background: white; color: black; font-size: 80px;">
+        <img src="ithuset-logo.png" style="position:absolute; left:80px; top:440px; -webkit-transform:  rotate(-25deg); background: white; color: black; font-size: 80px;">
+        <img src="voddler.jpg" style="position:absolute; left:700px; top:440px; -webkit-transform:  rotate(5deg); background: white; color: black; font-size: 80px;">
+        <img src="qbrick.gif" width="400px" style="position:absolute; left:270px; top:120px; -webkit-transform:  rotate(40deg);">
+        <p style="position:absolute; left:400px; top:450px; -webkit-transform:  rotate(5deg); color: white; font-size: 100px;">♠ ♣ ♥ ♦</p>
+      </article>
+
+      <article class='smaller'>
+        <q>
+          SlideShare... now in HTML5
+        </q>
+        <div class='author'>
+          <a href="http://www.slideshare.net/html5">http://www.slideshare.net/html5</a>
+        </div>
+      </article>
+
+      <article>
+        <h3>Games</h3>
+        <p><a href="http://www.cuttherope.ie/">Cut the rope</a></p>
+        <p><a href="http://operasoftware.github.com/Emberwind/">Emberwind</a></p>
+        <p><a href="http://code.google.com/p/quake2-gwt-port/">Quake II</a></p>
+      </article>
+
+<!--
+      <article class="smaller">
+        <q>cuttherope.ie is a canvas game, not exactly "HTML5". If you can do it in openGL you can do it in the browser. Don't understand the hype</q>
+        <div class="author">
+            <a href="https://twitter.com/#!/Cubiq/status/156744118280790018">Cubiq</a>
+        </div>
+      </article>
+-->
+      <article class="smaller">
+        <p><img src="canvastweet.png" class="centered"></p>
+        <div class="author">
+            <a href="https://twitter.com/#!/Cubiq/status/156744118280790018">Cubiq</a>
+        </div>
+      </article>
+
+<!--
+      <article>
+        <p><a href="http://www.youtube.com/watch?v=mzPxo7Y6JyA" target="_blank" ><img class="centered" src="ic_media_embed_play.png" style="height: 200px; border: 0.4em solid #C0C0C0; border-radius: 1em; padding-left: 0.7em; margin-top: 4em;"></a></p>
+      </article>
+-->  
+      <article class="smaller"> <!-- class="build" -->
+        <h3>History</h3>
+        <ul class="build">
+          <li>Invented 20 years ago ♥ <a href="http://www.w3.org/People/Berners-Lee/">Tim Berners-Lee</a></li>
+          <li>Over 10 years since HTML 4 (1999)</li>
+          <li>The work on HTML stopped ☄</li>
+          <li>XHTML was the way forward, XHTML 1.0 Completed 2000</li>
+          <li>XHTML 2.0 wasn't backwards compatible with existing content <span style="font-size: 1em;" class="red">☠</span></li>
+          <li>WHATWG formed in 2004 (Opera, Mozilla and later on Apple) ☮</li>
+          <li>Created <a href="http://www.whatwg.org/specs/web-apps/2005-09-01/">Web Applications 1.0</a></li>
+          <li>2007 the work on HTML restarted with a new HTML WG</li>
+          <li>Started to adopt the Web Applications 1.0 spec and call it HTML5 ☺</li>
+          <li>WHATWG says <a href="http://blog.whatwg.org/html-is-the-new-html5">HTML is the new HTML5</a> "the specification is now a living document"</li>
+          <li>HTML is still being developed ♥</li>
+        </ul>
+      </article>      
+
+      <article>
+          <pre>
+&lt;!doctype html&gt;
+&lt;meta charset=utf-8&gt;
+&lt;ul&gt;
+  &lt;li&gt;Welcome
+  &lt;li&gt;To
+  &lt;li&gt;HTML5
+&lt;/ul&gt;
+          </pre>
+      </article>
+
+      <article>
+        <h3>doctype</h3>
+        <div class="build">
+            <pre>
+&lt;!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+            </pre>
+            <p>to</p>
+            <pre>&lt;!doctype html&gt;</pre>
+        </div>
+      </article>
+
+      <article>
+        <h3>meta charset</h3>
+        <div class="build">
+            <pre>&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;</pre>
+            <p>to</p>
+            <pre>&lt;meta charset=utf-8&gt;</pre>
+        </div>
+      </article>
+
+      <article>
+          <h3>Optional start tags</h3>
+          <pre>&lt;html&gt;</pre>
+          <pre>&lt;head&gt;</pre>
+          <pre>&lt;body&gt;</pre>
+          <p>An li element's end tag may be omitted if the li element is immediately followed by another li element.</p>
+        <div class='source'>
+          <a href="http://dev.w3.org/html5/spec/Overview.html#optional-tags">http://dev.w3.org/html5/spec/Overview.html#optional-tags</a>
+        </div>
+      </article>      
+
+      <article>
+          <h3>Attributes</h3>
+          <div class="build">
+              <pre>&lt;input type="checkbox" checked="checked"/&gt;</pre>
+              <pre>&lt;input type="checkbox" checked="checked"&gt;</pre>
+              <pre>&lt;input type=checkbox checked=checked&gt;</pre>
+              <pre>&lt;input type=checkbox checked&gt;</pre>
+          </div>
+      </article>
+
+      <article>
+          <pre>
+&lt;!doctype html&gt;
+&lt;meta charset=utf-8&gt;
+&lt;ul&gt;
+  &lt;li&gt;Welcome
+  &lt;li&gt;To
+  &lt;li&gt;HTML5
+&lt;/ul&gt;
+          </pre>
+      </article>
+      
+      <article>
+        <h3>Standardized Parser</h3>
+        <p>Parsing has been standardized as of HTML5</p>
+        <p>Exact same parse in Chrome, Opera, IE10, Firefox4 and Safari 5.1</p>
+        <p>Reference implementation, <a href="http://code.google.com/p/html5lib/">html5lib</a></p>
+        <p><a href="http://livedom.validator.nu/">HTML5 Live DOM Viewer</a></p>
+        <div class='source'>
+          <a href="http://my.opera.com/chooseopera/blog/2011/11/04/opera-tech-break-html5">http://my.opera.com/chooseopera/blog/2011/11/04/opera-tech-break-html5</a>
+        </div>
+      </article>
+
+      <article>
+        <h3>HTML5 Features?</h3>
+        <ul class="build">
+          <li>CSS3</li>
+          <li>WebGL</li>
+          <li>Geolocation</li>
+          <li>Web Sockets</li>
+          <li>Web Workers</li>
+          <li>FileReader</li>
+          <li>WebRTC <span class="green">↷</span></li>
+          <li class="green">Check protothon.com for upcoming hackathon</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>HTML5 Features</h3>
+        <ul class="build">
+          <li>New semantic elements ★</li>
+          <li>New form features ★</li>
+          <li>Native video and audio (<a href="http://www.longtailvideo.com/html5/">The state of HTML5 video</a>)</li>
+          <li>History api ★</li>
+          <li>Offline web applications ★</li>
+          <li>Drawing api</li>
+          <li>Native drag and drop ★</li>
+        </ul>
+      </article>
+
+      <article>
+        <h1>HTML5 basicly means everything Web-standards-related today</h1>
+      </article>
+
+      <article>
+        <img src="HTML5_Logo_512.png" class="centered">        </p>
+      </article>
+
+      <article class="smaller">
+        <q>
+        We [developers] never needed a term to refer to “XHTML 1.0 plus CSS2.1” or “HTML4.01 plus JavaScript” or “any combination of front-end technologies.” Why this sudden all-conquering need for a term that covers so many different technologies as to be completely meaningless?
+        </q>
+        <div class='author'>
+          <a href="http://www.webstandards.org/2011/01/18/regarding-the-html5-logo/">WaSP</a>
+        </div>
+      </article>
+
+      <article>
+        <h1>HTML5 just a marketing term, everyone wants a HTML5 webpage</h1>
+      </article>
+
+
+      <article>
+        <h1 class="green">That Bruce Lawson teaches us more about</h1>
+        <p><a href="http://www.youtube.com/watch?feature=player_embedded&v=X52zJ3XehIM#t=276s">http://www.youtube.com/watch?feature=player_embedded&v=X52zJ3XehIM#t=276s</a></p>
+      </article>
+
+      <article>
+        <h1>New Semantic Elements</h1>
+      </article>
+      
+      <article>
+        <h3>Structure of a HTML 4 document</h3>
+        <pre>
+&lt;div class=&quot;header&quot;&gt;
+  &lt;h1&gt;...
+&lt;/div&gt;
+&lt;div class=&quot;navigation&quot;&gt;
+  &lt;ul&gt;...
+&lt;/div&gt;
+&lt;div id=&quot;articles&quot;&gt;
+  &lt;div class=&quot;article&quot;&gt;
+    &lt;h2&gt;...
+  &lt;/div&gt;
+  &lt;div class=&quot;article&quot;&gt;
+    &lt;h2&gt;...
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sidebar&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+        </pre>
+      </article>
+<!-- Example source code. -->
+      <article>
+        <h3>Structure of a HTML 5 document</h3>
+<pre>
+&lt;header&gt;
+  &lt;h1&gt;...
+&lt;/header&gt;
+&lt;nav&gt;
+  &lt;ul&gt;...
+&lt;/nav&gt;
+&lt;section&gt;
+  &lt;article&gt;
+    &lt;h2&gt;...
+  &lt;/article&gt;
+  &lt;article&gt;
+    &lt;h2&gt;...
+  &lt;/article&gt;
+&lt;/section&gt;
+&lt;aside&gt;&lt;/aside&gt;
+&lt;footer&gt;&lt;/footer&gt;
+</pre>
+<p>Good read, <a href="http://html5doctor.com/aside-revisited/">aside revisited</a></p>
+      </article>
+
+      <article>
+        <h1>New Form Features</h1>
+      </article>
+
+      <article>
+        <img src="form-register.png">
+      </article>
+
+      <article class='smaller'>
+        <h3>What if we could do something like this?</h3>
+
+        <pre>
+&lt;label&gt;Name
+  &lt;input type=&quot;text&quot; minlength=&quot;5&quot; autofocus required&gt;
+&lt;/label&gt;
+&lt;label&gt;Email
+  &lt;input type=&quot;email&quot; required&gt;
+&lt;/label&gt;
+&lt;label&gt;Homepage
+  &lt;input type=&quot;url&quot; required&gt;
+&lt;/label&gt;
+&lt;label&gt;DoB
+  &lt;input type=&quot;date&quot; required&gt;
+&lt;/label&gt;
+&lt;label&gt;Favorite Color
+  &lt;input type=&quot;color&quot;&gt;
+&lt;/label&gt;
+&lt;label&gt;Awesomeness
+  &lt;input type=&quot;range&quot; min=&quot;1&quot; max=&quot;10&quot; /&gt;
+&lt;/label&gt;
+&lt;label&gt;Yell to show that you&#39;re human
+  &lt;input type=&quot;text&quot; pattern=&quot;[A-Z]+&quot required&gt;
+&lt;/label&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Register&quot;&gt;  
+        </pre>
+
+        <p><a href="form/register.html">Demo</a></p>
+
+      </article>
+
+      <article class='smaller'>
+        <h3>Automcomplete</h3>
+        <pre>
+&lt;label&gt;
+  Enter a robot:
+  &lt;input type=&quot;text&quoDisconnect from the internet and try to reload this page. It should load without requiring you to connect to the internet.t; name=&quot;robot&quot; list=&quot;robots&quot;&gt;
+  &lt;datalist id=&quot;robots&quot;&gt;
+    &lt;option value=&quot;Abyssinian&quot;&gt;
+    &lt;option value=&quot;Alpaca&quot;&gt;
+    &lt;option value=&quot;ED 209&quot;&gt;
+    &lt;option value=&quot;Marvin the Paranoid Android&quot;&gt;
+    &lt;option value=&quot;Robbie the Robot&quot;&gt;
+    &lt;option value=&quot;Marcus Wright - Terminator Salvation&quot;&gt;
+    &lt;option value=&quot;Twiki&quot;&gt;
+    &lt;option value=&quot;Robot Devil&quot;&gt;
+    &lt;option value=&quot;Cain&quot;&gt;
+    &lt;option value=&quot;Cylons&quot;&gt;
+  &lt;/datalist&gt;
+&lt;/label&gt;
+        </pre>
+        <p><a href="form/autocomplete.html">Demo</a></p>
+      </article>
+
+      <article>
+        <h3>Search</h3>
+        
+        <pre>
+&lt;label&gt;Search
+  &lt;input type=&quot;search&quot;&gt;
+&lt;/label&gt;    
+        </pre>
+        
+        <form>
+            <label style="font-size: 0.7em;">Search
+                <input id="example-search" type="search">
+            </label>
+        </form>
+      </article>
+
+
+      <article>
+        <h1 class="centered" style="font-size: 10em;">#!</h1>
+      </article>
+
+      <article class="smaller">
+        <h3>The hashbang (or fragment)</h3>
+        <p>Invented to allow crawling for dynamically created content, <a href="http://code.google.com/intl/sv/web/ajaxcrawling/docs/specification.html">google explains</a>.</p>
+        <div class="build" style="padding-top: 0.5em;">
+            <p><span style="font-size: 1.2em; color: red;">☹</span> Depending on JavaScript to parse the fragment/hashbang and ask for content.</p>
+            <pre>twitter.com/#!/johanni</pre>
+            <p>But what happended with clean urls?</p>
+            <pre>twitter.com/johanni</pre>
+        </div>
+      </article>
+
+      <article class="smaller">
+        <q>So the #! URL syntax was especially geared for sites that got the fundamental web development best practices horribly wrong, and gave them a lifeline to getting their content seen by Googlebot.</q>
+        <div class='author'>
+          <a href="http://isolani.co.uk/blog/javascript/BreakingTheWebWithHashBangs">Mike Davies</a>
+        </div>
+      </article>
+      
+      <article class="smaller">
+        <q>There is no piece of dynamic AJAXy magic that requires beating the Web to a bloody pulp with a sharp-edged hashbang. Please stop doing it.</q>
+        <div class='author'>
+          <a href="http://www.tbray.org/ongoing/When/201x/2011/02/09/Hash-Blecch">Tim Bray</a>
+        </div>
+      </article>
+      
+      <article>
+        <h1>History API</h1>
+      </article>
+      
+      <article>
+        <h3>History API</h3>
+        <p>Everything that can be done with the hashbang can be done using the the new history api. <span style="font-size: 1.5em; color: green;">✓</span></p>
+        <p>GitHub has an awesome example for graceful degradation. Try it by browsing the code <a href="https://github.com/johannilsson/android-actionbar">here</a>.</p>
+        <div class='source'>
+          <a href="http://dev.w3.org/html5/spec/Overview.html#history">http://dev.w3.org/html5/spec/Overview.html#history</a>
+      </article>
+
+      <article>
+        <h3>Example</h3>
+        <p>To push a new url to the history.</p>
+        <pre>
+history.pushState({ url: url }, 'Title', url);
+        </pre>
+        <p>Handle back press</p>
+        <pre>
+window.onpopstate = function(e) {
+  addAwesomeKitten(location.href);
+}
+        </pre>
+        <p><a href="http://localhost:8080/kitten/miiieew">Demo with kittens</a></p>
+      </article>
+      
+      <article>
+        <p><img src="http://placekitten.com/600/600" class="centered"></p>
+        <div class='source'>
+          <a href="http://placekitten.com">place kitten</a>
+        </div>
+      </article>
+
+      <article>
+        <h1>Online Offline Online <br> Offline Online Offline<br>web applications ♥ ♥ ♥</h1>
+      </article>
+
+      <article>
+        <h3>Checking if we're online</h3>
+        <p>Using an event listener (currently not working)</p>
+        <pre>
+window.addEventListener("online", online, false);
+window.addEventListener("online", offline, false);
+        </pre>
+        <p>Using navigator</p>
+        <pre>
+navigator.onLine
+navigator.connection.type // Android 2.2 (3g, wifi...)
+        </pre>
+      </article>
+
+      <article class="smaller">
+        <h3>Offline Applications</h3>
+        <p>The cache manifest</p>
+        <pre>
+&lt;html manifest="app.manifest"&gt;
+        </pre>
+        <pre>
+CACHE MANIFEST
+
+CACHE:
+style.css
+script.js
+index.htm
+
+NETWORK:
+style2.css
+
+FALLBACK:
+main_image.jpg backup_image.jpg
+        </pre>
+        
+        <div class="source">
+            <p>Detailed article <a href="http://dev.opera.com/articles/view/offline-applications-html5-appcache/">here</a>.</p>
+        </div>
+      </article>
+
+      <article>
+        <pre>
+      ___           ___           ___           ___     
+     /\  \         /\  \         /\__\         /\  \    
+    /::\  \       /::\  \       /::|  |       /::\  \   
+   /:/\:\  \     /:/\:\  \     /:|:|  |      /:/\:\  \  
+  /:/  \:\__\   /::\~\:\  \   /:/|:|__|__   /:/  \:\  \ 
+ /:/__/ \:|__| /:/\:\ \:\__\ /:/ |::::\__\ /:/__/ \:\__\
+ \:\  \ /:/  / \:\~\:\ \/__/ \/__/~~/:/  / \:\  \ /:/  /
+  \:\  /:/  /   \:\ \:\__\         /:/  /   \:\  /:/  / 
+   \:\/:/  /     \:\ \/__/        /:/  /     \:\/:/  /  
+    \::/__/       \:\__\         /:/  /       \::/  /   
+     ~~            \/__/         \/__/         \/__/    
+        </pre>
+        <p>Simple <a href="http://markupartist.com/lab/offline/">demo</a>.</p>
+      </article>
+
+      <article>
+        <h1>Drag and Drop</h1>
+      </article>
+
+      <article>
+        <q>This section defines an event-based drag-and-drop mechanism.</q>
+        <div class="author"><a href="http://dev.w3.org/html5/spec/Overview.html#dnd">HTML5 spec</a></div>
+        <p>Yet another <a href="http://localhost:8000/">demo</a>.</p>
+      </article>
+
+
+      <article>
+        <img src="browser_logos-128.png" class="centered">
+
+            <p><a href="http://html5please.us">HTML5 Please Us</a> - look up features</p>
+            <p><a href="http://diveintohtml5.info/everything.html">THE ALL-IN-ONE ALMOST-ALPHABETICAL NO-BULLSHIT GUIDE TO DETECTING EVERYTHING</a></p>
+            <p><a href="http://www.modernizr.com/">Modernizr</a> - for feature detection.</p>
+            <p><a href="https://developer.mozilla.org/en/HTML/HTML5">MZN</a> - great tutorials</p>
+            <p><a href="http://dev.opera.com/">Opera</a> - more articles and tutorials</p>
+            <p><a href="http://html5demos.com/">Demos and Examples</a></p>
+            <p><a href="http://blog.whatwg.org/">WHATWG Blog</a></p>
+            <p><a href="http://delicious.com/johannilsson">My Delicious</a> - Curated links, mostly web dev</p>
+      </article>
+
+      <article>
+        <h1>A last demo</h1>
+      </article>
+
+<!--
+      <article>
+        <p style="margin-top: 5em;"><img src="arduino-hack.png" class="centered"></p>
+        <div class='source'>
+          Made with: <a href="http://fritzing.org/">Fritzing</a>
+        </div>
+      </article>
+-->
+      <article>
+        <h1>A Realtime color mixer</h1>
+        <div class="catchadream" style="height: 20px; margin-top: 10px;"></div>
+      </article>
+
+      <article>
+        <h3>Stack</h3>
+        <p><b>Arduino</b><br>open-source electronics prototyping platform</p>
+        <p><b>node.js</b><br>simple web server in JS that can handle websockets</p>
+        <p><b>serialport.js</b><br>read input from a serial port</p>
+        <p><b>socket.io</b><br>websockets and more</p>
+        <p><b>processing.js</b><br>language for doing visualisations and more</p>
+      </article>
+
+      <article>
+        <h3><span class="red">♥</span> you for</h3>
+        <ul>
+          <li><a href="http://subtlepatterns.com/?p=644">the background</a></li>
+          <li><a href="http://code.google.com/p/html5slides/">the HTML5 slide engine</a></li>
+          <li><a href="http://paulirish.com/2010/high-res-browser-icons/">the browser icons</a></li>
+          <li><a href="http://placekitten.com/">the kittens</a></li>
+          <li>for listening</li>
+        </ul>
+      </article>
+      
+      <!--
+      <article>
+        <p>
+          This is a slide with just text. This is a slide with just text.
+          This is a slide with just text. This is a slide with just text.
+          This is a slide with just text. This is a slide with just text.
+        </p>
+        <p>
+          There is more text just underneath.
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          Simple slide with header and text
+        </h3>
+        <p>
+          This is a slide with just text. This is a slide with just text.
+          This is a slide with just text. This is a slide with just text.
+          This is a slide with just text. This is a slide with just text.
+        </p>
+        <p>
+          There is more text just underneath with a <code>code sample: 5px</code>.
+        </p>
+      </article>
+
+      <article class='smaller'>
+        <h3>
+          Simple slide with header and text (small font)
+        </h3>
+        <p>
+          This is a slide with just text. This is a slide with just text.
+          This is a slide with just text. This is a slide with just text.
+          This is a slide with just text. This is a slide with just text.
+        </p>
+        <p>
+          There is more text just underneath with a <code>code sample: 5px</code>.
+        </p>
+      </article>
+
+      <article>
+        <h3>
+          Slide with bullet points and a longer title, just because we
+          can make it longer
+        </h3>
+        <ul>
+          <li>
+            Use this template to create your presentation
+          </li>
+          <li>
+            Use the provided color palette, box and arrow graphics, and
+            chart styles
+          </li>
+          <li>
+            Instructions are provided to assist you in using this
+            presentation template effectively
+          </li>
+          <li>
+            At all times strive to maintain Google's corporate look and feel
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+          Slide with bullet points that builds
+        </h3>
+        <ul class="build">
+          <li>
+            This is an example of a list
+          </li>
+          <li>
+            The list items fade in
+          </li>
+          <li>
+            Last one!
+          </li>
+        </ul>
+
+        <div class="build">
+          <p>Any element with child nodes can build.</p>
+          <p>It doesn't have to be a list.</p>
+        </div>
+      </article>
+
+      <article class='smaller'>
+        <h3>
+          Slide with bullet points (small font)
+        </h3>
+        <ul>
+          <li>
+            Use this template to create your presentation
+          <li>
+            Use the provided color palette, box and arrow graphics, and
+            chart styles
+          <li>
+            Instructions are provided to assist you in using this
+            presentation template effectively
+          <li>
+            At all times strive to maintain Google's corporate look and feel
+        </ul>
+      </article>
+
+      <article>
+        <h3>
+          Slide with a table
+        </h3>
+        
+        <table>
+          <tr>
+            <th>
+              Name
+            <th>
+              Occupation
+          <tr>
+            <td>
+              Luke Mahé
+            <td>
+              V.P. of Keepin’ It Real
+          <tr>
+            <td>
+              Marcin Wichary
+            <td>
+              The Michael Bay of Doodles
+        </table>
+      </article>
+      
+      <article class='smaller'>
+        <h3>
+          Slide with a table (smaller text)
+        </h3>
+        
+        <table>
+          <tr>
+            <th>
+              Name
+            <th>
+              Occupation
+          <tr>
+            <td>
+              Luke Mahé
+            <td>
+              V.P. of Keepin’ It Real
+          <tr>
+            <td>
+              Marcin Wichary
+            <td>
+              The Michael Bay of Doodles
+        </table>
+      </article>
+      
+      <article>
+        <h3>
+          Styles
+        </h3>
+        <ul>
+          <li>
+            <span class='red'>class="red"</span>
+          <li>
+            <span class='blue'>class="blue"</span>
+          <li>
+            <span class='green'>class="green"</span>
+          <li>
+            <span class='yellow'>class="yellow"</span>
+          <li>
+            <span class='black'>class="black"</span>
+          <li>
+            <span class='white'>class="white"</span>
+          <li>
+            <b>bold</b> and <i>italic</i>
+        </ul>
+      </article>
+      
+      <article>
+        <h2>
+          Segue slide
+        </h2>
+      </article>
+
+      <article>
+        <h3>
+          Slide with an image
+        </h3>
+        <p>
+          <img style='height: 500px' src='images/example-graph.png'>
+        </p>
+        <div class='source'>
+          Source: Sergey Brin
+        </div>
+      </article>
+
+      <article>
+        <h3>
+          Slide with an image (centered)
+        </h3>
+        <p>
+          <img class='centered' style='height: 500px' src='images/example-graph.png'>
+        </p>
+        <div class='source'>
+          Source: Larry Page
+        </div>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Image filling the slide (with optional header)
+        </h3>
+        <p>
+          <img src='images/example-cat.jpg'>
+        </p>
+        <div class='source white'>
+          Source: Eric Schmidt
+        </div>
+      </article>
+
+      <article>
+        <h3>
+          This slide has some code
+        </h3>
+        <section>
+        <pre>
+&lt;script type='text/javascript'&gt;
+  // Say hello world until the user starts questioning
+  // the meaningfulness of their existence.
+  function helloWorld(world) {
+    for (var i = 42; --i &gt;= 0;) {
+      alert('Hello ' + String(world));
+    }
+  }
+&lt;/script&gt;
+&lt;style&gt;
+  p { color: pink }
+  b { color: blue }
+  u { color: 'umber' }
+&lt;/style&gt;
+</pre>
+        </section>
+      </article>
+      
+      <article class='smaller'>
+        <h3>
+          This slide has some code (small font)
+        </h3>
+        <section>
+        <pre>
+&lt;script type='text/javascript'&gt;
+  // Say hello world until the user starts questioning
+  // the meaningfulness of their existence.
+  function helloWorld(world) {
+    for (var i = 42; --i &gt;= 0;) {
+      alert('Hello ' + String(world));
+    }
+  }
+&lt;/script&gt;
+&lt;style&gt;
+  p { color: pink }
+  b { color: blue }
+  u { color: 'umber' }
+&lt;/style&gt;
+</pre>
+        </section>
+      </article>
+      
+      <article>
+        <q>
+          The best way to predict the future is to invent it.
+        </q>
+        <div class='author'>
+          Alan Kay
+        </div>
+      </article>
+      
+      <article class='smaller'>
+        <q>
+          A distributed system is one in which the failure of a computer 
+          you didn’t even know existed can render your own computer unusable.
+        </q>
+        <div class='author'>
+          Leslie Lamport
+        </div>
+      </article>
+      
+      <article class='nobackground'>
+        <h3>
+          A slide with an embed + title
+        </h3>
+        
+        <iframe src='http://www.google.com/doodle4google/history.html'></§>
+      </article>
+
+      <article class='nobackground'>
+        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+      </article>
+
+      <article class='fill'>
+        <h3>
+          Full-slide embed with (optional) slide title on top
+        </h3>
+        <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+      </article>
+      
+      <article>
+        <h3>
+          Thank you!
+        </h3>
+        
+        <ul>
+          <li>
+            <a href='http://www.google.com'>google.com</a>
+        </ul>
+      </article>
+    -->
+
+    </section>
+
+  </body>
+</html>
+
