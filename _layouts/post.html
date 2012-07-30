@@ -1,20 +1,28 @@
 ---
 layout: default
 ---
+
+<section class="container">
+
 <div id="post">
-    <h2>{{ page.title }}</h2>
+    <h1>{{ page.title }}</h1>
     {{ content }}
     <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %d, %Y" }}</time></p>
-    <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-    <p><a class="FlattrButton" href="http://johannilsson.com{{ page.url }}" title="{{ page.title }}" lang="en"></a> <a href="http://twitter.com/share" class="twitter-share-button">Tweet</a> <g:plusone size="medium"></g:plusone></p>
+    <p><a class="FlattrButton" href="http://johannilsson.com{{ page.url }}" title="{{ page.title }}" lang="en"></a></p>
 </div>
 
-<div id="twitter-reactions"></div>
-
-<script src="/js/twitterReactions.js"></script>
-<script src="http://otter.topsy.com/trackbacks.js?callback=twitterReactions&amp;perpage=100&amp;url=http://johannilsson.com{{ page.url }}"></script> 
-
 <div id="disqus_thread"></div>
+
+<p class="by"><a href="/">Johan Nilsson</a>
+<br>
+<a href="http://twitter.com/johanni"><i class="icon-twitter-sign"></i></a>
+      <a href="http://github.com/johannilsson"><i class="icon-github-sign"></i></a>
+      <a href="http://www.linkedin.com/in/johanjohan"><i class="icon-linkedin-sign"></i></a>
+      <a href="https://plus.google.com/112898043205527989577/"><i class="icon-google-plus-sign"></i></a>
+      <a href="http://markupartist.com"><i class="icon-sign-blank"></i></a>
+      <a href="mailto:blog@markupartist.com"><i class="icon-envelope-alt"></i></a>
+      </p>
+</section>
 
 <script type="text/javascript"> 
     (function() {
@@ -37,11 +45,3 @@ layout: default
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-<div id="related">
-    <h2>Related Posts</h2>
-    <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-</div>

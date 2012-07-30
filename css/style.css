@@ -63,7 +63,8 @@ input, select { vertical-align: middle; }
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
  */
 
-body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+/*body { font:14px/1.231 sans-serif; *font-size:small; }*/ /* Hack retained to preserve specificity */
+body { font:16px sans-serif; } /* Hack retained to preserve specificity */
 select, input, textarea, button { font:99% sans-serif; }
 
 /* Normalize monospace sizing:
@@ -168,25 +169,43 @@ a:hover { color: #036; }
  * Author: 
  */
 
-h1 {
-    font-size: 1.6em;
-    margin-bottom: 1.2em;
+h1, h2, h3, h4, h5 {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
 }
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+header h1 {
+  font-size: 2.6em;
+  /*font-family: 'Pacifico', cursive;*/
+  margin-top: 0.5em;
+}
+
 h1 a {
     text-decoration: none;
     color: #444 !important;
 }
+
+h1 {
+  font-size: 1.7em;
+  margin-top: 1.2em;
+}
+
 h2 {
-    font-size: 1.2em;
-    margin-bottom: 1.2em;
+    font-size: 1.5em;
+    margin-top: 1.2em;
 }
 h3 {
     font-size: 1.2em;
-    margin-bottom: 1.2em;
+    margin-top: 1.2em;
 }
 
 p {
-    margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.7em;
 }
 
 pre {
@@ -203,16 +222,33 @@ pre {
 }
 
 ul {
-    margin-bottom: 1.2em;
+    margin-top: 1.2em;
 }
 
-#container {
-    width: 600px;
-    margin: 1.2em auto;
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
 }
+
+.container {
+    width: 700px;
+    margin: 10px 0 0 40px;
+}
+
+
+.by {
+  text-align: center;
+}
+.by a {
+  text-decoration: none;
+  color: #444 !important;
+}
+
 
 #about {
-    margin-top: 40px;
+    margin-top: 2em;
 }
 #about img {
     float: left;
@@ -223,18 +259,57 @@ ul {
     border: none !important;
 }
 
+#about a i {
+  text-decoration: none;
+}
+
+#home h2 {
+  clear: both;
+}
+
 #home ul.posts li {
-    list-style-type: none;
+    list-style-type: square;
     margin-bottom: 1em;
 }
 #home ul.posts {
     margin-left: 0px;
 }
 #home ul.posts time {
-    color: #828282;
+  float: right;
+  color: #828282;
 }
 
-#dsq-global-toolbar {
+#home .projects .divider {
+  margin-top: 40px;
+  height: 30px;
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)),to(rgb(29, 29, 29)));
+  background-image: -webkit-linear-gradient(top, rgb(0, 0, 0), rgb(29, 29, 29));
+  background-image: -moz-linear-gradient(top, rgb(0, 0, 0), rgb(29, 29, 29));
+  background-image: -o-linear-gradient(top, rgb(0, 0, 0), rgb(29, 29, 29));
+  background-image: -ms-linear-gradient(top, rgb(0, 0, 0), rgb(29, 29, 29));
+  background-image: linear-gradient(top, rgb(0, 0, 0), rgb(29, 29, 29));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#000000', EndColorStr='#1d1d1d');
+}
+
+#home .projects h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.projects {
+  background-color: #1d1d1d;
+  color: #d0f3e9;
+  padding-bottom: 20px;
+}
+.projects a {
+  color: #22f0b3;
+}
+
+
+
+
+.dsq-global-toolbar {
     width: 200px !important;
     margin: 0 0 -20px 0 !important;
     float: right !important;   
@@ -326,25 +401,31 @@ ul.comments li .comment-text {
  * These follow after primary styles so they will successfully override.
  */
 
-@media all and (orientation:portrait) {
-  /* Style adjustments for portrait mode goes here */
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+  .container {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+  }
 
+  #about {
+    margin-top: 10px;
+  }
+
+  #home h2 {
+    padding-top: 0;
+  }
 }
 
-@media all and (orientation:landscape) {
-  /* Style adjustments for landscape mode goes here */
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
 
-}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
 
-/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
-   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-
-
-  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
-  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-}
-
+/* Large desktop */
+@media (min-width: 1200px) {  }
 
 /**
  * Print styles.
@@ -365,4 +446,5 @@ ul.comments li .comment-text {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3{ page-break-after: avoid; }
 }
+
 

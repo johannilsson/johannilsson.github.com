@@ -4,33 +4,48 @@ title: Johan Nilsson
 ---
 
 <div id="home">
-    <h2>Blog Posts</h2>
+  <section class="container">
+    <div id="about">
+      <img src="http://gravatar.com/avatar/fa6595df828624e971ab01182fda8704?s=100">
+      <p>Hej, I’m Johan a Stockholm, Sweden based Web and Android developer, Jack Russel owner, night owl working on &#8220projects&#8221 that likes hats too much and buys the same shirt over and over again.
+      <br>
+      <a href="http://twitter.com/johanni"><i class="icon-twitter-sign"></i></a>
+      <a href="http://github.com/johannilsson"><i class="icon-github-sign"></i></a>
+      <a href="http://www.linkedin.com/in/johanjohan"><i class="icon-linkedin-sign"></i></a>
+      <a href="https://plus.google.com/112898043205527989577/"><i class="icon-google-plus-sign"></i></a>
+      <a href="http://markupartist.com"><i class="icon-sign-blank"></i></a>
+      <a href="mailto:blog@markupartist.com"><i class="icon-envelope-alt"></i></a></p> 
+      </div>
+    <h2>Posts</h2>
     <ul class="posts">
     {% for post in site.posts %}
-        <li><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d, %Y" }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <li><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d, %Y" }}</time> <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
+  </section>
 
-    <h2>Projects</h2>
-    <p>Some of the projects I'm involved in.</p>
-    <ul class="posts">
-        <li><a href="http://protothon.com">Protothon</a>: Space for the place between code and creativity.</li>
-        <li><a href="https://market.android.com/details?id=com.markupartist.sthlmtraveling">STHLM Traveling</a>: Android journey planner for Stockholm Public Transport.</li>
-        <li><a href="https://market.android.com/details?id=com.markupartist.iglaset">iglaset</a>: Android app for one of swedens largest liquor databases <a href="http://iglaset.se">iglaset.se</a>.</li>
-        <li><a href="https://github.com/johannilsson/android-actionbar">android-actionbar</a>: Action bar widget for Android.</li>
-        <li><a href="https://github.com/johannilsson/android-pulltorefresh">android-pulltorefresh</a>: Pull to refresh widget for Android.</li>
-        <li><a href="http://droidgiro.se">DroidGiro</a>: OCR scanner for Swedish invoices.</li>
-        <li><a href="http://sthlmandroid.se">STHLM Android</a>: A group of Android developers in Stockholm that meet and organizes various events.</li>
-        <li><a href="http://dev.av.vikel.se/">Avvikelse</a>: API for crowdsourcing deviations in public transportation.</li>
-        <li><a href="http://johannilsson.com/lastcommit">Last Commit</a>: You are only as good as your last commit.</li>
-    </ul>
-    <p>Find source and other projects at <a href="https://github.com/johannilsson/">GitHub</a> or <a href="http://gitorious.org/~johannilsson">Gitorious</a>.</p>
-
-    <div id="about">
-        <a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String' title='JS String .search'><img src='http://static.jsconf.us/promotejsh.gif' height='150' width='180' alt='JS String .search'/></a>
-        <img src="http://www.gravatar.com/avatar/67c1ea7baa076aa39cb43c2b80bc9e5d.png">
-        <p>I'm <a href="http://www.linkedin.com/in/johanjohan">Johan</a>, a Stockholm, Sweden based Web and Android developer that love APIs, hackathons and <a href="https://github.com/johannilsson">open source</a>. Contact me using <a href="http://twitter.com/johanni">Twitter</a> or <a href="mailto:blog@markupartist.com">email</a>.</p>
-        <p class="social"><a rel="me" href="https://profiles.google.com/markupartist"><img src="http://www.google.com/images/icons/ui/gprofile_button-16.png"></a> <a href="http://www.twitter.com/johanni"><img src="http://twitter-badges.s3.amazonaws.com/t_mini-a.png" alt="Follow johanni on Twitter"/></a></p>
+  <section class="projects">
+    <div class="divider">&nbsp;</div>
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Some of the projects I'm involved in.</p>
+      <ul class="posts">
+          <li><a href="http://protothon.com">Protothon</a>: Space for the place between code and creativity.</li>
+          <li><a href="https://market.android.com/details?id=com.markupartist.sthlmtraveling">STHLM Traveling</a>: Android journey planner for Stockholm Public Transport.</li>
+          <li><a href="https://market.android.com/details?id=com.markupartist.iglaset">iglaset</a>: Android app for one of Swedens largest liquor databases <a href="http://iglaset.se">iglaset.se</a>.</li>
+          <li><a href="https://github.com/johannilsson/android-actionbar">android-actionbar</a>: Action bar widget for Android.</li>
+          <li><a href="https://github.com/johannilsson/android-pulltorefresh">android-pulltorefresh</a>: Pull to refresh widget for Android.</li>
+          <li><a href="http://droidgiro.se">DroidGiro</a>: OCR scanner for Swedish invoices.</li>
+          <li><a href="http://sthlmandroid.se">STHLM Android</a>: A group of Android developers in Stockholm that meet and organizes various events.</li>
+          <li><a href="http://dev.av.vikel.se/">Avvikelse</a>: API for crowdsourcing deviations in public transportation.</li>
+          <li><a href="http://johannilsson.com/lastcommit">Last Commit</a>: You are only as good as your last commit.</li>
+      </ul>
+      <p>Find source and other projects at <a href="https://github.com/johannilsson/">GitHub</a> and <a href="http://gitorious.org/~johannilsson">Gitorious</a>.</p>
     </div>
 
+  </section>
 </div>
+
+
+
+
