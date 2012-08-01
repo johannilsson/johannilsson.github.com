@@ -222,7 +222,11 @@ pre {
 }
 
 ul {
-    margin-top: 1.2em;
+  margin-top: 1.2em;
+  list-style-type: square;
+}
+ul li {
+  line-height: 1.7em;
 }
 
 img {
