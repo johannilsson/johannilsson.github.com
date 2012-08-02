@@ -1,0 +1,57 @@
+---
+layout: post
+title: Hello Mac
+---
+
+After many years with Ubuntu and four years with my Dell I decided
+to get myself a new computer, a MacBook Air 13'.
+
+I can't really say why I decided to change to a Mac more than I wanted
+to test it for real. I've heard of many people changing away from Linux
+distributions to Mac because they want "something that just works" but the
+last years that has not really been an issue, Ubuntu has been very
+stable on my Dell and I even like Unity.
+
+I choosed the 13' over the retina based 15' mainly because of the size. I
+want a computer that's easy to cary and travel with.
+
+I expected the switch to Mac OS to be a bit more complicated but so far
+the transition has been pretty straight forward. After all this is
+mostly how me screen looks like and a browser on the other desktop.
+
+<img src="/images/macterm.png" alt="Screenshot of terminals">
+
+Getting environments up and running has been quite smooth. The upgrade to
+Mountain Lion breaked and removed some things which was a bit unexpected though.
+For extra packages I decided to go with MacPorts, this decision was only
+based on recommendation and I did not digg in to the difference of the
+alternatives but I'm happy with it so far. For terminal I switch between
+the default and iTerm2.
+
+My editor of choice is Vim which is the same. Previously I've more or
+less just used the NERDTree plugin and some decent theme together with
+vim-common. But for this setup I decided to try
+[Janus](https://github.com/carlhuda/janus/) to get up and running quickly.
+Janus also added some new features that I slowly adpating and learning
+now, seems like a nice package that I can recommend. I mainly use the arrow
+keys for navigation in Vim but they randomly stopped working after the upgrade
+to Mountain Lion (maybe related to switching between different desktops) but
+after some Internet searching I found that adding `TERM=linux` to my
+`.bashrc` solved that issue.
+
+The biggest transition for me has been with the keyboard. I did not really
+understand until now how much I actually use the `home` and `end` keys.
+This has forced me to learn some new shortcuts in vim which I previously
+did not needed to know of. The other keyboard issue has been the switch
+from a Swedish layout to a U.S. layout, the Swedish layout requires some
+very unnatural gestures for programming activities in Mac OS.
+
+I'm not so happy with the Finder application though, the lack of tab
+support annoys me and the mapping of enter to rename freaks me out.
+
+But overall I'm happy with the switch, my biggest fear now is that Mac
+OS will be to much of a lock in and turned into something like iOS.
+
+<img src="/images/dell.jpg" alt="Photo of my Dell">
+
+Bye bye my old Dell, I'll miss you. XOXO
