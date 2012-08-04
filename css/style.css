@@ -416,7 +416,7 @@ ul.comments li .comment-text {
 /* Landscape phones and down */
 @media (max-width: 480px) { 
   .container {
-    width: 90%;
+    width: 89%;
     margin: 0;
     padding: 10px;
   }
@@ -433,7 +433,7 @@ ul.comments li .comment-text {
 /* Landscape phone to portrait tablet */
 @media (max-width: 740px) { 
   .container {
-    width: 95%;
+    width: 89%;
     margin: 0;
     padding: 10px;
   }
