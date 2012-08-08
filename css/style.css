@@ -216,11 +216,18 @@ code {
     padding: 5px;
 }
 
+pre code {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0;
+    padding: 0;
+}
+
 pre {
     margin: 1em 0;
     font-size: 12px;
     background-color: #F0F0F0;
-    padding: 5px;
+    padding: 10px;
     line-height: 1.5em;
     color: #444;
     overflow: auto;
@@ -229,12 +236,14 @@ pre {
     border-radius: 3px;
 }
 
-ul {
-  margin-top: 1.2em;
-  list-style-type: square;
-}
 ul li {
-  line-height: 1.7em;
+    list-style-type: square;
+    margin-bottom: 1em;
+    line-height: 1.7em;
+}
+ul {
+    margin-top: 1.2em;
+    margin-left: 0px;
 }
 
 img {
@@ -279,13 +288,6 @@ img {
   clear: both;
 }
 
-#home ul.posts li {
-    list-style-type: square;
-    margin-bottom: 1em;
-}
-#home ul.posts {
-    margin-left: 0px;
-}
 #home ul.posts time {
   float: right;
   color: #828282;
