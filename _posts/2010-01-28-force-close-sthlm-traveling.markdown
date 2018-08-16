@@ -10,7 +10,7 @@ While fiddling around with this copy protection setting I also noticed that some
 
 Once again I'm really sorry about all this. I hope it will not happen again.
 
-But now to something slightly more fun, the latest release of STHLM Traveling. I added a Swedish translation with great help by Jean Diarbakerli that did all the hard work with the translation. The application will automatically choose Swedish if you have selected this in the Android settings. Unfortunately Android does not have a official Swedish translation but some roms support this for example HTC Sense. For the rest off us we need to go to the settings menu in the STHLM Traveling and set the preferred language there. I also added history and shortcuts for departures.
+But now to something slightly more fun, the latest release of STHLM Traveling. I added a Swedish translation with great help from a contributor that did all the hard work with the translation. The application will automatically choose Swedish if you have selected this in the Android settings. Unfortunately Android does not have a official Swedish translation but some roms support this for example HTC Sense. For the rest of us we need to go to the settings menu in the STHLM Traveling and set the preferred language there. I also added history and shortcuts for departures.
 
 I would also like to thank all of you that has sent me crash reports, it has helped me a lot when trying to make this application as stable as possible.
 
